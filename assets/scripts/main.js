@@ -27,6 +27,33 @@ var swiper = new Swiper(".swiperVideos", {
     },
 });
 
+// Links slider
+var swiper = new Swiper(".swiperInfographics", {
+    slidesPerView: 4,
+    navigation: {
+        nextEl: ".nextInfo",
+        prevEl: ".prevInfo",
+    },
+});
+
+// Events slider
+var swiper = new Swiper(".swiperEvents", {
+    slidesPerView: 3,
+    navigation: {
+        nextEl: ".nextEvent",
+        prevEl: ".prevEvent",
+    },
+});
+
+// Ads slider
+var swiper = new Swiper(".swiperAds", {
+    slidesPerView: 3,
+    navigation: {
+        nextEl: ".nextAd",
+        prevEl: ".prevAd",
+    },
+});
+
 // FAQ JS
 $(".faq_item").on("click", function () {
     $(this)
