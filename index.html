@@ -1,148 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qarabag</title>
     <!-- Font Family link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS File -->
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <!-- Bootstrap CSS local CDN -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css" />
     <!-- Swiper CSS local CDN -->
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css">
-</head>
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Header START -->
     <header>
-        <div class="header flex j-between a-center container">
-            <a href="" class="header_logo">
-                <img src="assets/img/logo.svg" alt="">
-            </a>
-            <div class="header_actions flex a-center">
-                <form action="" class="header_search-form">
-                    <input type="text" name="" id="headerSearch" class="header_search-input" placeholder="Axtar">
-                    <img src="assets/icons/Interface 52 - 24px.svg" alt="">
-                </form>
-                <select name="" id="" class="header_select-language">
-                    <option value="AZ">AZ</option>
-                    <option value="EN">EN</option>
-                </select>
-            </div>
+      <div class="header flex j-between a-center container">
+        <a href="" class="header_logo">
+          <img src="assets/img/logo.svg" alt="" />
+        </a>
+        <div class="header_actions flex a-center">
+          <form action="" class="header_search-form">
+            <input
+              type="text"
+              name=""
+              id="headerSearch"
+              class="header_search-input"
+              placeholder="Axtar"
+            />
+            <img src="assets/icons/Interface 52 - 24px.svg" alt="" />
+          </form>
+          <select name="" id="" class="header_select-language">
+            <option value="AZ">AZ</option>
+            <option value="EN">EN</option>
+          </select>
         </div>
-        <nav class="menu container">
-            <ul class="menu_list flex a-center j-between a-center">
-                <li class="menu_list-item active-page"><a href="" class="menu_list-item-link">Ana səhifə</a></li>
-                <li class="menu_list-item"><a href="" class="menu_list-item-link">Xidmət</a></li>
-                <li class="menu_list-item"><a href="" class="menu_list-item-link">Fəaliyyət</a></li>
-                <li class="menu_list-item"><a href="" class="menu_list-item-link">Qanunvericilik</a></li>
-                <li class="menu_list-item"><a href="" class="menu_list-item-link">Azərbaycan</a></li>
-                <li class="menu_list-item"><a href="" class="menu_list-item-link">Media</a></li>
-                <li class="menu_list-item"><a href="" class="menu_list-item-link">Əlaqə</a></li>
-            </ul>
-        </nav>
+      </div>
+      <nav class="menu container">
+        <ul class="menu_list flex a-center j-between a-center">
+          <li class="menu_list-item active-page">
+            <a href="" class="menu_list-item-link">Ana səhifə</a>
+          </li>
+          <li class="menu_list-item">
+            <a href="" class="menu_list-item-link">Xidmət</a>
+          </li>
+          <li class="menu_list-item">
+            <a href="" class="menu_list-item-link">Fəaliyyət</a>
+          </li>
+          <li class="menu_list-item">
+            <a href="" class="menu_list-item-link">Qanunvericilik</a>
+          </li>
+          <li class="menu_list-item">
+            <a href="" class="menu_list-item-link">Azərbaycan</a>
+          </li>
+          <li class="menu_list-item">
+            <a href="" class="menu_list-item-link">Media</a>
+          </li>
+          <li class="menu_list-item">
+            <a href="" class="menu_list-item-link">Əlaqə</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <!-- Main body section START -->
     <main>
-        <section class="homepage_slider">
-            <div class="swiper mySwiper">
-                <div class="homepage_slider-items swiper-wrapper">
-                    <div class="homepage_slider-item swiper-slide"><img src="assets/img/cover.png" alt=""></div>
-                    <div class="homepage_slider-item swiper-slide"><img src="assets/img/cover.png" alt=""></div>
-                    <div class="homepage_slider-item swiper-slide"><img src="assets/img/cover.png" alt=""></div>
-                    <div class="homepage_slider-item swiper-slide"><img src="assets/img/cover.png" alt=""></div>
-                </div>
-                <div class="homepage_slider-pagination swiper-pagination"></div>
+      <!-- Homepage slider section -->
+      <section class="homepage_slider">
+        <div class="swiper mySwiper">
+          <div class="homepage_slider-items swiper-wrapper">
+            <div class="homepage_slider-item swiper-slide">
+              <img src="assets/img/cover.png" alt="" />
             </div>
-        </section>
-        <section class="section_pd news">
-            <div class="container">
-                <div class="news_section">
-                    <h1 class="section_title">Xəbərlər</h1>
-                    <div class="news_items grid-3">
-                        <div class="news_item">
-                            <div class="news_img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="news_info">
-                                <h6 class="news_info-title">Qarabağda məktəb tikintisi ilə bağlı görülən işlər</h6>
-                                <p class="news_info-text">Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta məktəbin
-                                    tikintisinə başlanılıb. Tikinti işlərinin 15.09.2023-cü il tarixində bitirilməsi
-                                    nəzərdə tutulub. Hazırda tikinti işləri davam edir.</p>
-                                <div class="news_info-details flex a-center">
-                                    <div class="news_details-date">
-                                        <p>22.01.2023</p>
-                                    </div>
-                                    <div class="news_details-views flex a-center">
-                                        <img src="assets/icons/Interface 171 - 24px.svg" alt="">
-                                        <p>3000</p>
-                                    </div>
-                                </div>
-                                <a href="" class="news_link">
-                                    Ətraflı
-                                </a>
-                            </div>
-                        </div>
-                        <div class="news_item">
-                            <div class="news_img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="news_info">
-                                <h6 class="news_info-title">Qarabağda məktəb tikintisi ilə bağlı görülən işlər</h6>
-                                <p class="news_info-text">Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta məktəbin
-                                    tikintisinə başlanılıb. Tikinti işlərinin 15.09.2023-cü il tarixində bitirilməsi
-                                    nəzərdə tutulub. Hazırda tikinti işləri davam edir.</p>
-                                <div class="news_info-details flex a-center">
-                                    <div class="news_details-date">
-                                        <p>22.01.2023</p>
-                                    </div>
-                                    <div class="news_details-views flex a-center">
-                                        <img src="assets/icons/Interface 171 - 24px.svg" alt="">
-                                        <p>3000</p>
-                                    </div>
-                                </div>
-                                <a href="" class="news_link">
-                                    Ətraflı
-                                </a>
-                            </div>
-                        </div>
-                        <div class="news_item">
-                            <div class="news_img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="news_info">
-                                <h6 class="news_info-title">Qarabağda məktəb tikintisi ilə bağlı görülən işlər</h6>
-                                <p class="news_info-text">Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta məktəbin
-                                    tikintisinə başlanılıb. Tikinti işlərinin 15.09.2023-cü il tarixində bitirilməsi
-                                    nəzərdə tutulub. Hazırda tikinti işləri davam edir.</p>
-                                <div class="news_info-details flex a-center">
-                                    <div class="news_details-date">
-                                        <p>22.01.2023</p>
-                                    </div>
-                                    <div class="news_details-views flex a-center">
-                                        <img src="assets/icons/Interface 171 - 24px.svg" alt="">
-                                        <p>3000</p>
-                                    </div>
-                                </div>
-                                <a href="" class="news_link">
-                                    Ətraflı
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex a-center j-center">
-                        <a href="" class="all_items all_news">Bütün xəbərlər</a>
-                    </div>
-                </div>
+            <div class="homepage_slider-item swiper-slide">
+              <img src="assets/img/cover.png" alt="" />
             </div>
-        </section>
-        <!-- Elanlar -->
-        <!-- <section class="section_pd ads">
+            <div class="homepage_slider-item swiper-slide">
+              <img src="assets/img/cover.png" alt="" />
+            </div>
+            <div class="homepage_slider-item swiper-slide">
+              <img src="assets/img/cover.png" alt="" />
+            </div>
+          </div>
+          <div class="homepage_slider-pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Homepage news section -->
+      <section class="section_pd news">
+        <div class="container">
+          <div class="news_section">
+            <div class="news_section-title flex a-center j-between">
+              <h1 class="section_title">Xəbərlər</h1>
+              <div class="swiper-buttons flex a-center">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper swiperNews">
+              <div class="news_items swiper-wrapper">
+                <div class="news_item swiper-slide">
+                  <div class="news_img">
+                    <img src="assets/img/information.png" alt="" />
+                  </div>
+                  <div class="news_info">
+                    <h6 class="news_info-title">
+                      Qarabağda məktəb tikintisi ilə bağlı görülən işlər
+                    </h6>
+                    <p class="news_info-text">
+                      Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta
+                      məktəbin tikintisinə başlanılıb. Tikinti işlərinin
+                      15.09.2023-cü il tarixində bitirilməsi nəzərdə tutulub.
+                      Hazırda tikinti işləri davam edir.
+                    </p>
+                    <div class="news_info-details flex a-center">
+                      <div class="news_details-date">
+                        <p>22.01.2023</p>
+                      </div>
+                      <div class="news_details-views flex a-center">
+                        <img
+                          src="assets/icons/Interface 171 - 24px.svg"
+                          alt=""
+                        />
+                        <p>3000</p>
+                      </div>
+                    </div>
+                    <a href="" class="news_link"> Ətraflı </a>
+                  </div>
+                </div>
+                <div class="news_item swiper-slide">
+                  <div class="news_img">
+                    <img src="assets/img/information.png" alt="" />
+                  </div>
+                  <div class="news_info">
+                    <h6 class="news_info-title">
+                      Qarabağda məktəb tikintisi ilə bağlı görülən işlər
+                    </h6>
+                    <p class="news_info-text">
+                      Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta
+                      məktəbin tikintisinə başlanılıb. Tikinti işlərinin
+                      15.09.2023-cü il tarixində bitirilməsi nəzərdə tutulub.
+                      Hazırda tikinti işləri davam edir.
+                    </p>
+                    <div class="news_info-details flex a-center">
+                      <div class="news_details-date">
+                        <p>22.01.2023</p>
+                      </div>
+                      <div class="news_details-views flex a-center">
+                        <img
+                          src="assets/icons/Interface 171 - 24px.svg"
+                          alt=""
+                        />
+                        <p>3000</p>
+                      </div>
+                    </div>
+                    <a href="" class="news_link"> Ətraflı </a>
+                  </div>
+                </div>
+                <div class="news_item swiper-slide">
+                  <div class="news_img">
+                    <img src="assets/img/information.png" alt="" />
+                  </div>
+                  <div class="news_info">
+                    <h6 class="news_info-title">
+                      Qarabağda məktəb tikintisi ilə bağlı görülən işlər
+                    </h6>
+                    <p class="news_info-text">
+                      Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta
+                      məktəbin tikintisinə başlanılıb. Tikinti işlərinin
+                      15.09.2023-cü il tarixində bitirilməsi nəzərdə tutulub.
+                      Hazırda tikinti işləri davam edir.
+                    </p>
+                    <div class="news_info-details flex a-center">
+                      <div class="news_details-date">
+                        <p>22.01.2023</p>
+                      </div>
+                      <div class="news_details-views flex a-center">
+                        <img
+                          src="assets/icons/Interface 171 - 24px.svg"
+                          alt=""
+                        />
+                        <p>3000</p>
+                      </div>
+                    </div>
+                    <a href="" class="news_link"> Ətraflı </a>
+                  </div>
+                </div>
+                <div class="news_item swiper-slide">
+                  <div class="news_img">
+                    <img src="assets/img/information.png" alt="" />
+                  </div>
+                  <div class="news_info">
+                    <h6 class="news_info-title">
+                      Qarabağda məktəb tikintisi ilə bağlı görülən işlər
+                    </h6>
+                    <p class="news_info-text">
+                      Şuşa şəhərində 960 şagird yerlik 1 nömrəli tam orta
+                      məktəbin tikintisinə başlanılıb. Tikinti işlərinin
+                      15.09.2023-cü il tarixində bitirilməsi nəzərdə tutulub.
+                      Hazırda tikinti işləri davam edir.
+                    </p>
+                    <div class="news_info-details flex a-center">
+                      <div class="news_details-date">
+                        <p>22.01.2023</p>
+                      </div>
+                      <div class="news_details-views flex a-center">
+                        <img
+                          src="assets/icons/Interface 171 - 24px.svg"
+                          alt=""
+                        />
+                        <p>3000</p>
+                      </div>
+                    </div>
+                    <a href="" class="news_link"> Ətraflı </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex a-center j-center">
+              <a href="" class="all_items all_news">Bütün xəbərlər</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Elanlar -->
+      <!-- <section class="section_pd ads">
             <div class="container">
                 <div class="ads_section">
                     <h1 class="section_title">Elanlar</h1>
@@ -202,8 +290,8 @@
                 </div>
             </div>
         </section> -->
-        <!-- Tədbirlər -->
-        <!-- <section class="section_pd events">
+      <!-- Tədbirlər -->
+      <!-- <section class="section_pd events">
             <div class="container">
                 <div class="events_section">
                     <h1 class="section_title">Tədbirlər</h1>
@@ -263,202 +351,283 @@
                 </div>
             </div>
         </section> -->
-        <section class="section_pd information">
-            <div class="container">
-                <div class="information_section">
-                    <h1 class="section_title">Məlumat lövhəsi</h1>
-                    <div class="information_items grid-3">
-                        <a href="" class="information_item">
-                            <div class="information-img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="information-title">
-                                <h4>Bərpa, tikinti, idarəetmə</h4>
-                            </div>
-                        </a>
-                        <a href="" class="information_item">
-                            <div class="information-img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="information-title">
-                                <h4>Bərpa, tikinti, idarəetmə</h4>
-                            </div>
-                        </a>
-                        <a href="" class="information_item">
-                            <div class="information-img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="information-title">
-                                <h4>Bərpa, tikinti, idarəetmə</h4>
-                            </div>
-                        </a>
-                        <a href="" class="information_item">
-                            <div class="information-img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="information-title">
-                                <h4>Bərpa, tikinti, idarəetmə</h4>
-                            </div>
-                        </a>
-                        <a href="" class="information_item">
-                            <div class="information-img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="information-title">
-                                <h4>Bərpa, tikinti, idarəetmə</h4>
-                            </div>
-                        </a>
-                        <a href="" class="information_item">
-                            <div class="information-img">
-                                <img src="assets/img/information.png" alt="">
-                            </div>
-                            <div class="information-title">
-                                <h4>Bərpa, tikinti, idarəetmə</h4>
-                            </div>
-                        </a>
-                    </div>
+      <section class="section_pd information">
+        <div class="container">
+          <div class="information_section">
+            <h1 class="section_title">Məlumat lövhəsi</h1>
+            <div class="information_items grid-3">
+              <a href="" class="information_item">
+                <div class="information-img">
+                  <img src="assets/img/information.png" alt="" />
                 </div>
-            </div>
-        </section>
-        <!-- <section class="videos">
-            <h1 class="section_title">Videolar</h1>
-            <div class="video_items">
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-            </div>
-            <a href="" class="all_items all_videos"></a>
-        </section> -->
-        <section class="section_pd faq">
-            <div class="container">
-                <div class="faq_section">
-                    <div class="faq_title">
-                        <h1 class="section_title">FAQ</h1>
-                    </div>
-                    <div class="faq_items">
-                        <div class="faq_item">
-                            <div class="faq_item-title">
-                                <img src="assets/icons/Icon.svg" alt=""> Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit</div>
-                            <div class="faq_item-text"></div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-title">
-                                <img src="assets/icons/Icon.svg" alt=""> Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit</div>
-                            <div class="faq_item-text"></div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-title">
-                                <img src="assets/icons/Icon.svg" alt=""> Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit</div>
-                            <div class="faq_item-text"></div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-title">
-                                <img src="assets/icons/Icon.svg" alt=""> Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit</div>
-                            <div class="faq_item-text"></div>
-                        </div>
-                    </div>
-                    <div class="flex a-center j-center">
-                        <a href="" class="all_items all_news">Bütün xəbərlər</a>
-                    </div>
+                <div class="information-title">
+                  <h4>Bərpa, tikinti, idarəetmə</h4>
                 </div>
-            </div>
-        </section>
-        <section class="section_pd links">
-            <div class="container">
-                <div class="links_section grid-4">
-                    <a href="" class="link">
-                        <img src="assets/img/president.svg" alt="">
-                    </a>
-                    <a href="" class="link">
-                        <img src="assets/img/president.svg" alt="">
-                    </a>
-                    <a href="" class="link">
-                        <img src="assets/img/president.svg" alt="">
-                    </a>
-                    <a href="" class="link">
-                        <img src="assets/img/president.svg" alt="">
-                    </a>
+              </a>
+              <a href="" class="information_item">
+                <div class="information-img">
+                  <img src="assets/img/information.png" alt="" />
                 </div>
-            </div>
-        </section>
-        <section class="section_mg subscribe">
-            <div class="container">
-                <div class="subscribe_section flex column a-center j-center">
-                    <h1 class="subscribe_title">Xəbərlərə abunə olun</h1>
-                    <p class="subscribe_subtitle">Yeniliklərdən anında xəbərdar olmaq üçün</p>
-                    <form action="" class="subscirbe_form flex a-center">
-                        <input type="text" placeholder="Email ünvanı daxil edin" class="subscribe_field">
-                        <button class="subscribe_button flex a-center">Abunə <span>ol</span></button>
-                    </form>
+                <div class="information-title">
+                  <h4>Bərpa, tikinti, idarəetmə</h4>
                 </div>
+              </a>
+              <a href="" class="information_item">
+                <div class="information-img">
+                  <img src="assets/img/information.png" alt="" />
+                </div>
+                <div class="information-title">
+                  <h4>Bərpa, tikinti, idarəetmə</h4>
+                </div>
+              </a>
+              <a href="" class="information_item">
+                <div class="information-img">
+                  <img src="assets/img/information.png" alt="" />
+                </div>
+                <div class="information-title">
+                  <h4>Bərpa, tikinti, idarəetmə</h4>
+                </div>
+              </a>
+              <a href="" class="information_item">
+                <div class="information-img">
+                  <img src="assets/img/information.png" alt="" />
+                </div>
+                <div class="information-title">
+                  <h4>Bərpa, tikinti, idarəetmə</h4>
+                </div>
+              </a>
+              <a href="" class="information_item">
+                <div class="information-img">
+                  <img src="assets/img/information.png" alt="" />
+                </div>
+                <div class="information-title">
+                  <h4>Bərpa, tikinti, idarəetmə</h4>
+                </div>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="section_pd videos">
+        <div class="container">
+          <div class="video_section">
+            <div class="video_section-title flex a-center j-between">
+              <h1 class="section_title">Videolar</h1>
+              <div class="swiper-buttons flex a-center">
+                <div class="prevVideo"></div>
+                <div class="nextVideo"></div>
+              </div>
+            </div>
+            <div class="swiper swiperVideos">
+              <div class="video_items swiper-wrapper">
+                <iframe
+                  class="swiper-slide"
+                  width="32%"
+                  height="315"
+                  src="https://www.youtube.com/embed/U3QDYvDtY3U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <iframe
+                  class="swiper-slide"
+                  width="32%"
+                  height="315"
+                  src="https://www.youtube.com/embed/U3QDYvDtY3U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <iframe
+                  class="swiper-slide"
+                  width="32%"
+                  height="315"
+                  src="https://www.youtube.com/embed/U3QDYvDtY3U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <iframe
+                  class="swiper-slide"
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/U3QDYvDtY3U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="flex a-center j-center">
+              <a href="" class="all_items all_news">Bütün videolar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_pd faq">
+        <div class="container">
+          <div class="faq_section">
+            <div class="faq_title">
+              <h1 class="section_title">FAQ</h1>
+            </div>
+            <div class="faq_items">
+              <div class="faq_item">
+                <div class="faq_item-title">
+                  <img src="assets/icons/Icon.svg" alt="" /> Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit
+                </div>
+                <div class="faq_item-text d-none">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                  nulla sequi alias dolores animi non rem vel quos maiores esse,
+                  et illo! Deserunt, voluptate eum at nisi eveniet repellendus
+                  facilis.
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_item-title">
+                  <img src="assets/icons/Icon.svg" alt="" /> Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit
+                </div>
+                <div class="faq_item-text d-none">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                  nulla sequi alias dolores animi non rem vel quos maiores esse,
+                  et illo! Deserunt, voluptate eum at nisi eveniet repellendus
+                  facilis.
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_item-title">
+                  <img src="assets/icons/Icon.svg" alt="" /> Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit
+                </div>
+                <div class="faq_item-text d-none">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                  nulla sequi alias dolores animi non rem vel quos maiores esse,
+                  et illo! Deserunt, voluptate eum at nisi eveniet repellendus
+                  facilis.
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_item-title">
+                  <img src="assets/icons/Icon.svg" alt="" /> Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit
+                </div>
+                <div class="faq_item-text d-none">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                  nulla sequi alias dolores animi non rem vel quos maiores esse,
+                  et illo! Deserunt, voluptate eum at nisi eveniet repellendus
+                  facilis.
+                </div>
+              </div>
+            </div>
+            <div class="flex a-center j-center">
+              <a href="" class="all_items all_news">Bütün xəbərlər</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_pd links">
+        <div class="container">
+          <div class="links_section grid-4">
+            <a href="" class="link">
+              <img src="assets/img/president.svg" alt="" />
+            </a>
+            <a href="" class="link">
+              <img src="assets/img/president.svg" alt="" />
+            </a>
+            <a href="" class="link">
+              <img src="assets/img/president.svg" alt="" />
+            </a>
+            <a href="" class="link">
+              <img src="assets/img/president.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section_mg subscribe">
+        <div class="container">
+          <div class="subscribe_section flex column a-center j-center">
+            <h1 class="subscribe_title">Xəbərlərə abunə olun</h1>
+            <p class="subscribe_subtitle">
+              Yeniliklərdən anında xəbərdar olmaq üçün
+            </p>
+            <form action="" class="subscirbe_form flex a-center">
+              <input
+                type="text"
+                placeholder="Email ünvanı daxil edin"
+                class="subscribe_field"
+              />
+              <button class="subscribe_button flex a-center">
+                Abunə <span>ol</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer flex j-between">
-            <a href="" class="footer_logo">
-                <img src="assets/img/footer-logo.svg" alt="">
-            </a>
-            <div class="footer_links">
-                <h4 class="footer_title">Xüsusi linklər</h4>
-                <ul class="footer_links-list">
-                    <li class="footer_links-list-item"><a href="">Xidmət və fəaliyyət</a></li>
-                    <li class="footer_links-list-item"><a href="">Azərbaycan</a></li>
-                    <li class="footer_links-list-item"><a href="">Media</a></li>
-                    <li class="footer_links-list-item"><a href="">Əlaqə</a></li>
-                </ul>
-            </div>
-            <div class="footer_links">
-                <h4 class="footer_title">Bizi izləyin</h4>
-                <ul class="footer_links-list">
-                    <li class="footer_links-list-item"><a href="">Facebook</a></li>
-                    <li class="footer_links-list-item"><a href="">Instagram</a></li>
-                    <li class="footer_links-list-item"><a href="">Twitter</a></li>
-                    <li class="footer_links-list-item"><a href="">Youtube</a></li>
-                    <li class="footer_links-list-item"><a href="">Tiktok</a></li>
-                    <li class="footer_links-list-item"><a href="">Whatsapp</a></li>
-                </ul>
-            </div>
-            <div class="footer_addresses">
-                <h4 class="footer_title">Ünvan və telefonlar</h4>
-                <ul class="footer_links-list">
-                    <li class="footer_links-list-item flex">
-                        <p>Ünvan:</p><a href="">Azərbaycan Respublikası, AZ1029, Bakı
-                            şəhəri, Nizami rayonu, Keşlə qəsəbəsi,
-                            Heydər Əliyev prospekti, 155</a>
-                    </li>
-                    <li class="footer_links-list-item flex">
-                        <p>Telefon:</p><a href="tel:(+994 12) 403-89-70">(+994 12) 403-89-70</a>
-                    </li>
-                    <li class="footer_links-list-item flex">
-                        <p>Çağrı:</p><a href="tel:195-1">195-1</a>
-                    </li>
-                    <li class="footer_links-list-item flex">
-                        <p>Faks:</p><a href="tel:(+994 12) 403-89-71">(+994 12) 403-89-71</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer flex j-between">
+        <a href="" class="footer_logo">
+          <img src="assets/img/footer-logo.svg" alt="" />
+        </a>
+        <div class="footer_links">
+          <h4 class="footer_title">Xüsusi linklər</h4>
+          <ul class="footer_links-list">
+            <li class="footer_links-list-item">
+              <a href="">Xidmət və fəaliyyət</a>
+            </li>
+            <li class="footer_links-list-item"><a href="">Azərbaycan</a></li>
+            <li class="footer_links-list-item"><a href="">Media</a></li>
+            <li class="footer_links-list-item"><a href="">Əlaqə</a></li>
+          </ul>
         </div>
+        <div class="footer_links">
+          <h4 class="footer_title">Bizi izləyin</h4>
+          <ul class="footer_links-list">
+            <li class="footer_links-list-item"><a href="">Facebook</a></li>
+            <li class="footer_links-list-item"><a href="">Instagram</a></li>
+            <li class="footer_links-list-item"><a href="">Twitter</a></li>
+            <li class="footer_links-list-item"><a href="">Youtube</a></li>
+            <li class="footer_links-list-item"><a href="">Tiktok</a></li>
+            <li class="footer_links-list-item"><a href="">Whatsapp</a></li>
+          </ul>
+        </div>
+        <div class="footer_addresses">
+          <h4 class="footer_title">Ünvan və telefonlar</h4>
+          <ul class="footer_links-list">
+            <li class="footer_links-list-item flex">
+              <p>Ünvan:</p>
+              <a href=""
+                >Azərbaycan Respublikası, AZ1029, Bakı şəhəri, Nizami rayonu,
+                Keşlə qəsəbəsi, Heydər Əliyev prospekti, 155</a
+              >
+            </li>
+            <li class="footer_links-list-item flex">
+              <p>Telefon:</p>
+              <a href="tel:(+994 12) 403-89-70">(+994 12) 403-89-70</a>
+            </li>
+            <li class="footer_links-list-item flex">
+              <p>Çağrı:</p>
+              <a href="tel:195-1">195-1</a>
+            </li>
+            <li class="footer_links-list-item flex">
+              <p>Faks:</p>
+              <a href="tel:(+994 12) 403-89-71">(+994 12) 403-89-71</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JS CDN -->
     <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="assets/plugins/jquery/jquery-3.6.3.min.js"></script>
     <!-- Swiper JS CDN -->
     <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + "</span>";
-                },
-            },
-        });
-    </script>
-</body>
-
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>

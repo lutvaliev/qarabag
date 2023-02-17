@@ -82,6 +82,50 @@ input {
     flex-direction: column;
 }
 
+.rotateIcon{
+    padding-right: 0 !important;
+    padding-left: 10px;
+    transform: rotate(180deg);
+}
+  
+/* Swiper default */
+.section_pd .container .swiper-buttons{
+    grid-gap: 36px;
+}
+
+.section_pd .container .swiper-button-next,.section_pd .container .swiper-button-prev, .nextVideo, .prevVideo{
+    position: relative;
+    color: #081131;
+}
+
+.section_pd .container .swiper-button-next::after,.section_pd .container .swiper-button-prev::after, .nextVideo::after, .prevVideo::after{
+    font-size: 24px;
+}
+
+.section_pd .container .swiper-button-prev, .prevVideo{
+    left: auto;
+}
+
+.nextVideo, .prevVideo{
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nextVideo::after{
+    content: 'next';
+    font-family: swiper-icons;
+}
+
+.prevVideo::after{
+    content: 'prev';
+    font-family: swiper-icons;
+}
+
 
 /* Triple grid */
 .grid-3 {
@@ -217,6 +261,10 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     grid-gap: 24px;
 }
 
+.news .news_section .news_items .swiper-slide, .videos .video_items .swiper-slide{
+    width: 32% !important;
+}
+
 .news .news_section .news_items .news_item .news_info {
     width: 80%;
     margin: auto;
@@ -292,6 +340,16 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     border: 1px solid #0F214D;
 }
 
+/* Homepage videos section */
+.videos .video_section .video_items{
+    grid-gap: 24px;
+    padding-bottom: 64px;
+}
+
+.videos .video_section .video_items .swiper-slide{
+    height: 278px;
+}
+
 /* Homepage information section */
 .information .information_items {
     grid-gap: 24px;
@@ -358,7 +416,12 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
 
 .faq .faq_section .faq_items .faq_item .faq_item-title img {
     padding-right: 10px;
+    transition: .2s ease-in-out;
 }
+
+.faq .faq_section .faq_items .faq_item .faq_item-text{
+    padding: 16px 16px 0 16px;
+} 
 
 /* Homepage Links */
 .links .links_section {
