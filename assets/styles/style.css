@@ -517,36 +517,87 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
 }
 
 /* Ads (elanlar) style */
-.ads .ads_section .ad_items {
+.ads_section .ad_items {
     grid-gap: 24px;
     padding-bottom: 64px;
 }
 
 .ads .ads_section .ad_items .ad_item {
     width: 32% !important;
+}
+
+.ads_section .ad_items .ad_item {
     padding: 46px;
     border-radius: 20px;
     box-shadow: 0px 4px 40px 0px #8E909929;
 }
 
-.ads .ads_section .ad_items .ad_item .ad_info-text {
+.ads_section .ad_items .ad_item .ad_info-text {
     color: #5C5C5C;
     padding-bottom: 56px;
     font-size: 14px;
     font-weight: 400;
 }
 
-.ads .ads_section .ad_items .ad_item .ad_info-details .ad_details-date {
+.ads_section .ad_items .ad_item .ad_info-details .ad_details-date {
     color: #00000061;
     font-size: 14px;
     font-weight: 400;
 }
 
-.ads .ads_section .ad_items .ad_item .ad_info-details .ad_details-views {
+.ads_section .ad_items .ad_item .ad_info-details .ad_details-views {
     padding-left: 10px;
     font-size: 14px;
     font-weight: 400;
     color: #00000061;
+}
+
+.ads_section .swiper-pagination-bullet{
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+}
+
+.ads_page .swiper{
+    padding: 10px;
+    overflow: visible;
+}
+
+
+.ads_page .swiper .ad_items{
+    grid-gap: 0;
+}
+
+.ads_page .swiper-slide{
+    grid-gap: 24px;
+    opacity: 0;
+}
+
+.ads_page .swiper .swiper-slide-active{
+    opacity: 1;
+}
+
+.ads_page .swiper-slide .ad_item{
+    width: 32%;
+}
+
+.ads_page .swiper-pagination{
+    position: relative;
+    padding-top: 132px;
+}
+
+.ads_page .swiper-pagination .swiper-pagination-bullet{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFADE;
+}
+
+.ads_page .swiper-pagination .swiper-pagination-bullet-active{
+    color: white;
+    background-color: #0C1C47;
 }
 
 /* Events(tədbirlər) style */
