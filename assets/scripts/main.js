@@ -65,6 +65,17 @@ var swiper = new Swiper(".swiperAdsPage", {
     },
 });
 
+// Events page slider
+var swiper = new Swiper(".swiperEventsPage", {
+    slidesPerView: 3,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+    },
+});
 
 // FAQ JS
 $(".faq_item").on("click", function () {
@@ -76,5 +87,14 @@ $(".faq_item").on("click", function () {
 
 $(".faq_item").on("click", function () {
     $(this).closest(".faq_item").find("img").toggleClass("rotateIcon");
+});
+
+// Activity tabs 
+$('.event_tab').click(function (e) {
+    //Toggle tab link
+    $(this).addClass('active_event-tab').siblings().removeClass('active_event-tab');
+
+    //Toggle target tab
+    $($(this).attr('href')).addClass('active_elem').siblings().removeClass('active_elem');
 });
 

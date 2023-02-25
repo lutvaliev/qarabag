@@ -576,21 +576,22 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     opacity: 1;
 }
 
-.ads_page .swiper-pagination {
+.ads_page .swiper-pagination, .event_elem .swiper-pagination{
     position: relative;
     padding-top: 132px;
 }
 
-.ads_page .swiper-pagination .swiper-pagination-bullet {
+.ads_page .swiper-pagination .swiper-pagination-bullet, .swiper-pagination .swiper-pagination-bullet{
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #FAFAFADE;
+    border-radius: 0;
 }
 
-.ads_page .swiper-pagination .swiper-pagination-bullet-active {
+.ads_page .swiper-pagination .swiper-pagination-bullet-active, .swiper-pagination .swiper-pagination-bullet-active{
     color: white;
     background-color: #0C1C47;
 }
@@ -631,8 +632,12 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     color: #081131A3;
 }
 
-.events .events_section .swiperEvents .event_items .event {
+.events .events_section  .event_items .event {
     width: 32% !important;
+}
+
+.events_slider{
+    display: none;
 }
 
 /* Infographics */
@@ -718,6 +723,151 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
 
 .info_board-stats .info_board-views svg{
     padding-right: 4px;
+}
+
+/* Events page */
+.events_tabs{
+    padding: 8px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: white;
+    grid-gap: 12px;
+    box-shadow: 0px 4px 40px 0px #8E909929;
+}
+.events_tabs .event_tab{
+    width: 100%;
+    color: #081131;
+    padding: 30px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #FAFAFA;
+    border-radius: 10px;
+}
+
+.events_tabs .event_tab.active_event-tab{
+    color: white;
+    background-color: #081131;
+}
+
+.all_events{
+    grid-gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* Activities */
+.activity{
+    display: none;
+}
+.activity p{
+    padding-top: 10px;
+}
+
+.activity_images{
+    grid-gap: 24px;
+}
+
+.active_elem{
+    display: block !important;
+}
+
+/* Legislation */
+.legislation_section .event_tab svg{
+    padding-right: 10px;
+}
+.legislation_section .active_event-tab svg path{
+    fill: white;
+}
+.legislation_section .event_tab{
+    padding: 8px 16px;
+}
+.legislation{
+    display: none;
+}
+.legislation h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.legislation .legislation_text{
+    padding: 40px 0 24px 0;
+    color: #000000A3;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.download_legislation{
+    padding: 6px 12px;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+    background-color: #0D1E49;
+}
+
+.download_legislation:hover{
+    color: white;
+}
+
+.download_legislation svg{
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+}
+
+/* News */
+.all_latest-news{
+    grid-column: span 2;
+}
+
+.latest_news{
+    color: #081131;
+    padding: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 40px 0px #8E909929;
+}
+
+.latest_news:hover{
+    color: #081131;
+}
+
+.latest_news .news_img{
+    width: 50%;
+    height: 189px;
+}
+
+.latest_news .news_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.latest_news .news_text{
+    padding-left: 16px;
+}
+
+.latest_news .news_text h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.latest_news .news_text p{
+    padding: 18px 0 34px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000A3;
+}
+
+.news_stats{
+    color:#000000A3;
+}
+
+.news_views{
+    padding-left: 10px;
 }
 
 /* Contact page */
