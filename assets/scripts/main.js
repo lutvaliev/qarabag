@@ -77,6 +77,20 @@ var swiper = new Swiper(".swiperEventsPage", {
     },
 });
 
+// News page slider
+var swiper = new Swiper(".swiperNewsPage", {
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: 'row',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+    },
+});
+
 // FAQ JS
 $(".faq_item").on("click", function () {
     $(this)
@@ -98,3 +112,21 @@ $('.event_tab').click(function (e) {
     $($(this).attr('href')).addClass('active_elem').siblings().removeClass('active_elem');
 });
 
+$(document).ready(function () {
+    $('.video').magnificPopup({
+        type: 'iframe',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByIframeClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        iframe: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+        }
+    });
+});
