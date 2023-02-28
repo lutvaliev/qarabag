@@ -818,6 +818,9 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
 }
 
 /* News */
+.all_news{
+    grid-gap: 24px;
+}
 .all_latest-news{
     grid-column: span 2;
 }
@@ -879,14 +882,74 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     width: 100% !important;
 }
 
-.news_page .swiper-pagination{
-    margin: 40px 0 0 0;
-    position: relative;
-    top: auto;
-    left: auto !important;
-    bottom: auto !important;
-    right: auto;
+.all_latest-news_pagination{
+    margin: 40px 0;
 }
+
+.all_latest-news_pagination .pagination-item{
+    width: 40px;
+    height: 40px;
+    color: #0C1C47;
+    background-color: #FAFAFADE;
+}
+
+.all_latest-news_pagination .pagination-item.active_pagination{
+    background-color: #0C1C47;
+    color: #fff;
+}
+
+.similar_news-section{
+    margin-bottom: 48px;
+}
+
+.similar-news_title, .simple-news_title{
+    color: white;
+    padding: 4px 14px;
+    background: #0F214D;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.similar_news{
+    color: #000;
+    padding: 16px 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.similar_news:hover{
+    color: #000;
+}
+
+.similar_news p{
+    width: 60%;
+    padding-right: 8px;
+}
+
+.similar_news .similar_news-img{
+    width: 40%;
+}
+
+.similar_news .similar_news-img img{
+    width: 100%;
+    height: 130px;
+}
+
+.sample_news-slider{
+    margin: 24px 0;
+}
+
+.sample_news-slider .sampleNewsSwiper .homepage_slider-item{
+    color: #081131;
+    height: 100%;
+}
+
+.sample_news-slider .sampleNewsSwiper .homepage_slider-item img{
+    height: 157px;
+}
+
+
 
 /* Videogallery */
 .videogallery{
@@ -971,6 +1034,138 @@ body .mfp-iframe-holder .mfp-content{
 
 .newsInner_rate button:nth-child(2){
     margin-left: 30px;
+}
+
+/* Azerbaijan */
+.Azerbaijan_info{
+    padding: 40px 0 80px 0;
+}
+.Azerbaijan{
+    padding: 23px 0;
+}
+.Azerbaijan_details h4{
+    padding-top: 16px;
+}
+
+.Azerbaijan_flag img{
+    width: 125px;
+    height: 63px;
+    object-fit: cover;
+}
+
+.Azerbaijan_gerb img{
+    width: 100px;
+    height: 109px;
+}
+
+.Heydar_Aliyev-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.Heydar_Aliyev-text{
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #081131;
+}
+
+.Azerbaijan_map{
+    margin: 150px 0;
+    height: 70vh;
+}
+
+.map{
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.map svg{
+    position: absolute;
+}
+
+.baku{
+    right: 0;
+}
+
+.quba{
+    right: 127px;
+    top: -140px;
+}
+
+.shirvan{
+    right: 139px;
+    top: -13px;
+}
+
+.sheki{
+    top: -147px;
+    right: 276px;
+}
+
+.aran{
+    right: 121px;
+    top: 13px;
+}
+
+.qazakh{
+    top: -76px;
+    right: 420px;
+}
+
+.lankaran{
+    top: 220px;
+    right: 172px;
+}
+
+.karabakh{
+    top: 81px;
+    right: 334px;
+}
+
+.article{
+    margin-bottom: 40px;
+}
+.article_img{
+    width: 35%;
+    height: 253px;
+}
+.article_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.article_info-title{
+    color: #081131;
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.article_info{
+    width: 65%;
+    padding-left: 24px;
+}
+
+.article_info p{
+    color: #081131;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.more_article{
+    color: #0F214D;
+    display: inline-block;
+    padding: 6px 40px;
+    border-radius: 4px;
+    border: 1px solid #0F214D;
+    transition: .2s ease-in-out;
+}
+
+.more_article:hover{
+    color: white;
+    background-color: #0F214D;
 }
 
 /* Contact page */
