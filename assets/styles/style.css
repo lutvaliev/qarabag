@@ -30,8 +30,8 @@ input {
     outline: none !important;
 }
 
-.container {
-    padding: 0 !important;
+body .container {
+    padding: 0;
 }
 
 .flex {
@@ -276,10 +276,6 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     grid-gap: 24px;
 }
 
-.news .news_section .news_items .swiper-slide, .videos .video_items .swiper-slide {
-    width: 32% !important;
-}
-
 .news .news_section .news_items .news_item .news_info {
     width: 80%;
     margin: auto;
@@ -330,8 +326,13 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    padding-bottom: 8px;
+    margin-bottom: 8px !important;
     transition: .2s ease-in-out;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    text-overflow: ellipsis;
 }
 
 .news .news_section .news_items .news_item .news_info .news_info-details {
@@ -949,8 +950,6 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     height: 157px;
 }
 
-
-
 /* Videogallery */
 .videogallery{
     grid-gap: 24px;
@@ -1268,4 +1267,103 @@ footer .footer .footer_links-list .footer_links-list-item p {
 
 footer .footer .footer_addresses {
     width: 30%;
+}
+
+@media (min-width: 991px) {
+    .news .news_section .news_items .swiper-slide, .videos .video_items .swiper-slide {
+        width: 32% !important;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        display: none;
+    }
+    body .container{
+        padding:0 12px;
+    }
+    .grid-3{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .grid-4{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .section_pd{
+        padding: 32px 0 0 0;
+    }
+    .section_title{
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 0;
+    }
+    .homepage_slider .homepage_slider-items .homepage_slider-item{
+        height: 167px;
+    }
+    .information .information_items .information_item .information-img{
+        height: 100px;
+    }
+    .information .information_items .information_item .information-title h4{
+        font-size: 16px;
+    }
+    .links .links_section{
+        grid-gap: 12px;
+    }
+    .links .links_section .link img{
+        height: 96px;
+    }
+    .subscribe .subscribe_section .subscirbe_form{
+        width: 100%;
+    }
+    .subscribe .subscribe_section .subscribe_title{
+        font-size: 24px;
+    }
+    .subscribe .subscribe_section .subscribe_subtitle{
+        font-size: 16px;
+    }
+    .subscribe .subscribe_section .subscirbe_form .subscribe_button{
+        padding: 8px 24px;
+    }
+    footer{
+        padding-top: 12px ;
+    }
+    footer .footer{
+        padding: 0;
+        flex-direction: column;
+    }
+    footer .footer .footer_logo{
+        width: 100%;
+    }
+    footer .footer .footer_logo img{
+        margin-bottom: 40px;
+    }
+    footer .footer .footer_addresses{
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px){
+    .grid-3{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .news .news_section .news_items .news_item .news_info{
+        width: 90%;
+        transform: translateY(-10%);
+    }
+    .news .news_section .news_items .news_item .news_info .news_info-text{
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        line-height: 16px;
+    }
+    .news .news_section .news_items .news_item .news_info .news_info-title, .news .news_section .news_items .news_item .news_info .news_info-text, .news .news_section .news_items .news_item .news_info .news_link, .news .news_section .news_items .news_item .news_info .news_info-details, .subscribe .subscribe_section .subscirbe_form .subscribe_button{
+        font-size: 12px;
+    }
+    .news .news_section .news_items .news_item .news_img{
+        height: 150px;
+    }
+    .subscribe .subscribe_section .subscirbe_form .subscribe_field{
+        font-size: 14px;
+    }
 }
