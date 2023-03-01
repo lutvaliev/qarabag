@@ -61,6 +61,20 @@ var swiper = new Swiper(".swiperInfographics", {
         nextEl: ".nextInfo",
         prevEl: ".prevInfo",
     },
+    breakpoints: {
+        300: {
+            slidesPerView: 1.4,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 4,
+        },
+    },
 });
 
 // Events slider
@@ -70,6 +84,20 @@ var swiper = new Swiper(".swiperEvents", {
         nextEl: ".nextEvent",
         prevEl: ".prevEvent",
     },
+    breakpoints: {
+        300: {
+            slidesPerView: 1.8,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
 });
 
 // Ads slider
@@ -78,6 +106,20 @@ var swiper = new Swiper(".swiperAds", {
     navigation: {
         nextEl: ".nextAd",
         prevEl: ".prevAd",
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1.4,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
     },
 });
 
