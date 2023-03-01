@@ -178,7 +178,7 @@ body .container {
 
 /* Header */
 header {
-    padding: 15px 24px;
+    padding: 15px 24px 0 24px;
 }
 
 header .header_actions .header_search-form {
@@ -208,8 +208,45 @@ header .header_actions .header_select-language {
     margin-left: 28px;
 }
 
-nav.menu .menu_list {
+nav.menu .menu_list .menu_list-item {
+    position: relative;
     padding: 49px 0 23px 0;
+}
+
+nav.menu .menu_list .menu_list-item .menu_submenu{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    top: 100%;
+    display: none;
+}
+
+nav.menu .menu_list .menu_list-item:not(:last-child) .menu_submenu{
+    width: 200px;
+}
+
+nav.menu .menu_list .menu_list-item .menu_submenu.active_menu{
+    display: block;
+}
+
+nav.menu .menu_list .menu_list-item .menu_submenu li{
+    padding: 2px 4px;
+    width: 100%;
+    border: 1px solid #F5F5F5
+}
+
+nav.menu .menu_list .menu_list-item .menu_submenu li a{
+    width: 100%;
+    display: block;
+    color:#000000DE;
+}
+
+nav.menu .menu_list .menu_list-item .menu_submenu li:hover{
+    background-color: #08074B;
+}
+
+nav.menu .menu_list .menu_list-item .menu_submenu li:hover a{
+    color: white;
 }
 
 nav.menu .menu_list .menu_list-item .menu_list-item-link {
@@ -1075,8 +1112,59 @@ body .mfp-iframe-holder .mfp-content{
     position: absolute;
 }
 
+.map svg:hover path{
+    transition: .2s ease-in-out;
+    fill:#47B0FC;
+}
+
+.active_svg path{
+    fill:#47B0FC;
+}
+
+.region_number{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #47B0FC;
+}
+
+.region_number span{
+    color: white;
+}
+
+.map_region{
+    margin-bottom: 24px;
+}
+
+.map_region-number{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #B6B6B6;
+    margin-right: 8px;
+}
+
+.map_region-number span{
+    color: white;
+}
+.map_region-name{
+    color: #081131DE;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
 .baku{
     right: 0;
+}
+
+.region_number{
+    position: absolute;
+}
+
+#baku_number{
+    right: 90px;
+    top: 70px;
 }
 
 .quba{
@@ -1084,9 +1172,19 @@ body .mfp-iframe-holder .mfp-content{
     top: -140px;
 }
 
+#quba_number{
+    top: -60px;
+    right: 210px;
+}
+
 .shirvan{
     right: 139px;
     top: -13px;
+}
+
+#shirvan_number{
+    top:25px;
+    right: 240px;
 }
 
 .sheki{
@@ -1094,9 +1192,19 @@ body .mfp-iframe-holder .mfp-content{
     right: 276px;
 }
 
+#sheki_number{
+    top:-40px;
+    right: 380px;
+}
+
 .aran{
     right: 121px;
     top: 13px;
+}
+
+#aran_number{
+    top:120px;
+    right: 280px;
 }
 
 .qazakh{
@@ -1104,14 +1212,29 @@ body .mfp-iframe-holder .mfp-content{
     right: 420px;
 }
 
+#qazakh_number{
+    top:10px;
+    right: 520px;
+}
+
 .lankaran{
     top: 220px;
     right: 172px;
 }
 
+#lankaran_number{
+    top:310px;
+    right: 210px;
+}
+
 .karabakh{
     top: 81px;
     right: 334px;
+}
+
+#karabakh_number{
+    top:170px;
+    right: 410px;
 }
 
 .article{

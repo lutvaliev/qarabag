@@ -181,6 +181,23 @@ $('.event_tab').click(function (e) {
     $($(this).attr('href')).addClass('active_elem').siblings().removeClass('active_elem');
 });
 
+$('.map_region').click(function (e) {
+    e.preventDefault()
+    //Toggle tab link
+    $(this).addClass('active_svg-tab').siblings().removeClass('active_svg-tab');
+
+    //Toggle target tab
+    $($(this).attr('href')).addClass('active_svg').siblings().removeClass('active_svg');
+});
+
+// Menu
+$(".menu_list-item").hover(
+    function () {
+        $(this).closest(".menu_list-item").find(".menu_submenu").toggleClass("active_menu")
+    }
+);
+
+
 $(document).ready(function () {
     $('.video').magnificPopup({
         type: 'iframe',
