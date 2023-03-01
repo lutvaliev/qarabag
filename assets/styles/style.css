@@ -1283,7 +1283,7 @@ footer .footer .footer_addresses {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     .section_pd{
-        padding: 32px 0 0 0;
+        padding: 32px 0;
     }
     .section_title{
         font-size: 20px;
@@ -1332,6 +1332,13 @@ footer .footer .footer_addresses {
     }
     footer .footer .footer_addresses{
         width: 100%;
+    }
+    .events_tabs{
+        margin-bottom: 20px;
+    }
+    .events_tabs .event_tab{
+        font-size: 14px;
+        padding: 16px;
     }
 }
 
