@@ -1,0 +1,75 @@
+
+                  <!-- <div class="head_data d-none">
+                    <img class="data_img" src="assets/img/icraci.png" alt="" />
+                    <p class="data_name">Həmidov Övsət</p>
+                    <p class="data_role">İcraçı direktor</p>
+                  </div> -->
+
+
+        <!-- <div class="head_data d-none">
+                    <img class="data_img" src="assets/img/icraci.png" alt="" />
+                    <p class="data_name">Həmidov Övsət</p>
+                    <p class="data_role">İcraçı direktor</p>
+                  </div> -->
+        <!-- <div class="head_popup-section d-none flex a-center j-center">
+          <div class="head_popup">
+            <div class="head_popup-close flex a-end j-end">
+              <p id="closeButton">X</p>
+            </div>
+            <div class="head_popup-img flex a-center j-center">
+              <img id="head_img" src="" alt="" />
+            </div>
+            <div class="head_popup-info flex column a-center j-center">
+              <h2 id="head_name"></h2>
+              <h2 id="head_role"></h2>
+            </div>
+          </div>
+        </div> -->
+
+
+            <div class="heads flex a-center column j-center">
+              <div class="head_block-row flex a-center j-center block-1">
+                <a
+                  href=""
+                  class="head_block flex a-center j-center popup_block"
+                >
+                  <h4>İcraçı direktor</h4>
+                </a>
+              </div>
+              <div class="head_block-row flex a-center j-center block-3">
+                <a
+                  href=""
+                  class="head_block popup_block flex a-center j-center"
+                >
+                  <h4>İcraçı direktor</h4>
+                </a>
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+              </div>
+              <div class="head_block-row flex a-center j-center block-2">
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+              </div>
+              <div class="head_block-row flex a-center j-center block-4">
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+                <div class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </div>
+                <a href="" class="head_block flex a-center j-center">
+                  <h4>İcraçı direktor</h4>
+                </a>
+              </div>
+            </div>

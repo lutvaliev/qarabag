@@ -181,6 +181,7 @@ $('.event_tab').click(function (e) {
     $($(this).attr('href')).addClass('active_elem').siblings().removeClass('active_elem');
 });
 
+// Onclick map region
 $('.map_region').click(function (e) {
     e.preventDefault()
     //Toggle tab link
@@ -198,7 +199,6 @@ if (window.innerWidth > 768) {
         }
     );
 }
-
 if (window.innerWidth < 768) {
     $(".menu_list-item").click(
         function (e) {
@@ -209,10 +209,24 @@ if (window.innerWidth < 768) {
     );
 }
 
+// Mobile menu
 $(".mobile_menu-bar").click(function (e) {
     $(".menu_list").toggleClass("openMenu")
 })
 
+// $(".head_block").click(function (e) {
+//     if (e.target.classList.contains("popup_block")) {
+//         e.preventDefault()
+//         $(".head_popup-section").toggleClass("d-none");
+//         $("#head_img").attr("src", $(this).closest(".popup_block").find(".data_img").attr("src"));
+//         $("#head_name").html($(this).closest(".popup_block").find(".data_name").text());
+//         $("#head_role").html($(this).closest(".popup_block").find(".data_role").text());
+//     }
+// })
+
+$("#closeButton").click(function (e) {
+    $(".head_popup-section").addClass("d-none")
+})
 
 $(document).ready(function () {
     $('.video').magnificPopup({
