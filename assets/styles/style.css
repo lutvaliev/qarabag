@@ -208,6 +208,10 @@ header .header_actions .header_select-language {
     margin-left: 28px;
 }
 
+nav.menu .menu_list.openMenu{
+    display: flex;
+}
+
 nav.menu .menu_list .menu_list-item {
     position: relative;
     padding: 49px 0 23px 0;
@@ -258,6 +262,12 @@ nav.menu .menu_list .menu_list-item .menu_list-item-link {
 nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     color: #112350;
     font-weight: 600;
+}
+
+.mobile_menu-bar{
+    border: none;
+    display: none;
+    background-color: transparent;
 }
 
 /* Breadcrumbs */
@@ -1117,8 +1127,12 @@ body .mfp-iframe-holder .mfp-content{
     fill:#47B0FC;
 }
 
-.active_svg path{
-    fill:#47B0FC;
+.active_svg{
+    fill:#47B0FC !important;
+}
+
+.active_svg path:not(.num){
+    fill:#47B0FC !important;
 }
 
 .region_number{
@@ -1151,90 +1165,6 @@ body .mfp-iframe-holder .mfp-content{
     color: #081131DE;
     font-size: 20px;
     font-weight: 400;
-}
-
-
-.baku{
-    right: 0;
-}
-
-.region_number{
-    position: absolute;
-}
-
-#baku_number{
-    right: 90px;
-    top: 70px;
-}
-
-.quba{
-    right: 127px;
-    top: -140px;
-}
-
-#quba_number{
-    top: -60px;
-    right: 210px;
-}
-
-.shirvan{
-    right: 139px;
-    top: -13px;
-}
-
-#shirvan_number{
-    top:25px;
-    right: 240px;
-}
-
-.sheki{
-    top: -147px;
-    right: 276px;
-}
-
-#sheki_number{
-    top:-40px;
-    right: 380px;
-}
-
-.aran{
-    right: 121px;
-    top: 13px;
-}
-
-#aran_number{
-    top:120px;
-    right: 280px;
-}
-
-.qazakh{
-    top: -76px;
-    right: 420px;
-}
-
-#qazakh_number{
-    top:10px;
-    right: 520px;
-}
-
-.lankaran{
-    top: 220px;
-    right: 172px;
-}
-
-#lankaran_number{
-    top:310px;
-    right: 210px;
-}
-
-.karabakh{
-    top: 81px;
-    right: 334px;
-}
-
-#karabakh_number{
-    top:170px;
-    right: 410px;
 }
 
 .article{
@@ -1383,6 +1313,34 @@ footer .footer .footer_addresses {
     width: 30%;
 }
 
+.map-section__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.map-section__row svg g{
+    fill: #B9DCF9;
+}
+
+.map-section__row svg path:not(.num){
+    fill: #B9DCF9;
+    stroke: #82C9FD;
+}
+.map-section__row circle{
+    color: white;
+    fill: #47B0FC;
+}
+.regions__map{
+    width: 70%;
+    position: relative;
+}
+.regions__map svg{
+    width: 100%;
+}
+.map_regions{
+    width: 30%;
+}
+
 @media (min-width: 991px) {
     .events .events_section  .event_items .event, .ads .ads_section .ad_items .ad_item, .news .news_section .news_items .swiper-slide, .videos .video_items .swiper-slide {
         width: 32% !important;
@@ -1391,10 +1349,63 @@ footer .footer .footer_addresses {
         width: 23.5% !important;
     }
 }
+@media(max-width: 991px){
+    .map-section__row{
+        flex-direction: column;
+    }
+    .map_regions{
+        width: 100%;
+    }
+}
 
 @media (max-width: 768px){
     header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    header img{
+        width: 100%;
+    }
+    header .header{
+        width: 70%;
+    }
+    .mobile_menu-bar{
+        display: block;
+    }
+    body nav{
+        width: 30%;
+    }
+    .menu .container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu_list{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 23432423;
+        background-color: white;
+        padding: 36px 36px 18px !important;
+    }
+    nav.menu .menu_list .menu_list-item{
+        padding: 0 0 10px 0;
+    }
+    nav.menu .menu_list .menu_list-item .menu_submenu{
+        position: relative;
+        /* display: block; */
+    }
+    nav.menu .menu_list .menu_list-item .menu_submenu li{
+        border: none;
+    }
+    .menu_list,.header_actions{
         display: none;
+    }
+    nav.menu .menu_list.openMenu{
+        display: block;
     }
     body .container{
         padding:0 12px;
@@ -1488,7 +1499,47 @@ footer .footer .footer_addresses {
     .latest_news .news_text{
         width: 60%;
     }
+    .regions__map{
+        width: 100%;
+        height: 70%;
+    }
+    .original-color{
+        width: 100%;
+    }
+    .article{
+        flex-direction: column;
+    }
+    .article_img{
+        width: 100%;
+        height: 170px;
+    }
+    .article_info{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .more_article{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    .Azerbaijan_details h4{
+        text-align: center;
+        font-size: 16px;
+    }
+    .Azerbaijan_flag img {
+        width: 100px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .Azerbaijan_gerb img {
+        width: 70px;
+        height: 80px;
+    }
+    .Azerbaijan_anthem h4{
+        padding-top: 8px;
+    }
 }
+
 
 @media (max-width: 475px){
     .legislation_section .events_tabs{

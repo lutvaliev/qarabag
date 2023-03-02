@@ -191,11 +191,27 @@ $('.map_region').click(function (e) {
 });
 
 // Menu
-$(".menu_list-item").hover(
-    function () {
-        $(this).closest(".menu_list-item").find(".menu_submenu").toggleClass("active_menu")
-    }
-);
+if (window.innerWidth > 768) {
+    $(".menu_list-item").hover(
+        function () {
+            $(this).closest(".menu_list-item").find(".menu_submenu").toggleClass("active_menu")
+        }
+    );
+}
+
+if (window.innerWidth < 768) {
+    $(".menu_list-item").click(
+        function (e) {
+            console.log(e)
+            e.preventDefault()
+            $(this).closest(".menu_list-item").find(".menu_submenu").toggleClass("active_menu")
+        }
+    );
+}
+
+$(".mobile_menu-bar").click(function (e) {
+    $(".menu_list").toggleClass("openMenu")
+})
 
 
 $(document).ready(function () {
