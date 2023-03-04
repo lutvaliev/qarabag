@@ -202,7 +202,7 @@ if (window.innerWidth > 768) {
 if (window.innerWidth < 768) {
     $(".menu_list-item").click(
         function (e) {
-            if (e.target.classList.contains("menu_list-item-link")) {
+            if (e.target.classList.contains("menu_list-item-link") && e.target.id != "AzerbaijanPage" || e.target.id != "contactPage") {
                 e.preventDefault();
             }
             $(this).closest(".menu_list-item").find(".menu_submenu").toggleClass("active_menu")
