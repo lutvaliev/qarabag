@@ -808,6 +808,16 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     grid-gap: 24px;
 }
 
+.activity_img{
+    width: 100%;
+    height: 350px;
+}
+
+.activity_img img{
+    width: 100%;
+    height: 100%;
+}
+
 .active_elem{
     display: block !important;
 }
@@ -1619,6 +1629,9 @@ footer .footer .footer_addresses {
     }
     .Azerbaijan_anthem h4{
         padding-top: 8px;
+    }
+    .activity_img{
+        height: 200px;
     }
 }
 

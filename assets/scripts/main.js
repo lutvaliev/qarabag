@@ -202,8 +202,9 @@ if (window.innerWidth > 768) {
 if (window.innerWidth < 768) {
     $(".menu_list-item").click(
         function (e) {
-            console.log(e)
-            e.preventDefault()
+            if (e.target.classList.contains("menu_list-item-link")) {
+                e.preventDefault();
+            }
             $(this).closest(".menu_list-item").find(".menu_submenu").toggleClass("active_menu")
         }
     );
