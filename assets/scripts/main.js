@@ -144,6 +144,20 @@ var swiper = new Swiper(".swiperEventsPage", {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
     },
+    breakpoints: {
+        300: {
+            slidesPerView: 1.4,
+        },
+        640: {
+            slidesPerView: 1.4,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
 });
 
 // News page slider
