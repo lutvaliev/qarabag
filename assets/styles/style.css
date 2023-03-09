@@ -1044,6 +1044,7 @@ body .mfp-iframe-holder .mfp-content{
 }
 
 .text_area img{
+    max-width: 588px;
     height: 392px;
     object-fit: cover;
 }
@@ -1257,6 +1258,7 @@ body .mfp-iframe-holder .mfp-content{
 .head_img img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -1446,6 +1448,20 @@ footer .footer .footer_addresses {
     .map_regions{
         width: 100%;
     }
+    .text_area{
+        display: flex;
+        flex-direction: column;
+    }
+    .text_area img{
+        width: 100%;
+    }
+    .text_area p{
+        padding-top: 10px;
+        padding-left: 0;
+    }
+    .events_tabs .event_tab p{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -1481,10 +1497,10 @@ footer .footer .footer_addresses {
         width: 100%;
         z-index: 23432423;
         background-color: white;
-        padding: 36px 36px 18px !important;
+        padding: 36px 36px 18px;
     }
     nav.menu .menu_list .menu_list-item{
-        padding: 0 0 10px 0;
+        padding: 0 0 4px 0;
     }
     nav.menu .menu_list .menu_list-item .menu_submenu{
         position: relative;
@@ -1493,11 +1509,18 @@ footer .footer .footer_addresses {
     nav.menu .menu_list .menu_list-item .menu_submenu li{
         border: none;
     }
-    .menu_list,.header_actions{
+    .header_actions{
         display: none;
     }
-    nav.menu .menu_list.openMenu{
+    .menu_list{
         display: block;
+        transition: .3s ease-in-out;
+        left: -100%;
+    }
+    body header nav.menu .container .menu_list.openMenu{
+        left: 0;
+        display: block;
+        padding: 10px 36px 18px !important;
     }
     body .container{
         padding:0 12px;
@@ -1565,9 +1588,6 @@ footer .footer .footer_addresses {
     .events_tabs .event_tab{
         font-size: 14px;
         padding: 16px;
-    }
-    .events_tabs .event_tab p{
-        display: none;
     }
     .events_tabs .event_tab svg{
         padding-right: 0;
@@ -1637,10 +1657,13 @@ footer .footer .footer_addresses {
 
 
 @media (max-width: 475px){
+    nav.menu .menu_list .menu_list-item .menu_list-item-link{
+        font-size: 14px;
+    }
     .legislation_section .events_tabs{
         position: fixed;
         left: 0;
-        top: 0;
+        bottom: 0;
         margin: 0;
         z-index: 2;
     }
@@ -1732,7 +1755,7 @@ footer .footer .footer_addresses {
     }
     .head_img{
         width: 182px;
-        height: 92px;
+        height: 112px;
     }
     .head_info h2{
         font-size: 20px;
@@ -1745,5 +1768,30 @@ footer .footer .footer_addresses {
     }
     .news .news_section .news_items .news_item .news_info .news_link{
         padding: 4px 16px;
+    }
+    .newsInner_stats{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .section_pd .container .swiper-button-next::after, .section_pd .container .swiper-button-prev::after, .nextVideo::after, .prevVideo::after, .nextInfo::after, .prevInfo::after, .nextEvent::after, .prevEvent::after, .nextAd::after, .prevAd::after{
+        font-size: 14px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top: 5px !important;
+    }
+    .nextVideo, .prevVideo, .nextInfo, .prevInfo, .nextEvent, .prevEvent, .nextAd, .prevAd{
+        top: 5px;
+    }
+    .breadcrumb_section .breadcrumb_prev-page, .breadcrumb_section .breadcrumb_current-page{
+        font-size: 12px;
+    }
+    .videos_page{
+        padding: 0;
+    }
+    .legislation h4{
+        font-size: 16px;
+    }
+    .legislation .legislation_text{
+        font-size: 14px;
     }
 }
