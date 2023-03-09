@@ -247,3 +247,12 @@ $(document).ready(function () {
         }
     });
 });
+
+
+$(document).ready(function () {
+    let arrayOfLinks = Array.prototype.slice.call(document.querySelectorAll(".video"))
+    let arrayOfIframes = Array.prototype.slice.call(document.querySelectorAll(".video_iframe"))
+    var arr = arrayOfLinks.map((link) => link.href.split("?v=")[1])
+    var embedlink = arr.map((link) => "http://www.youtube.com/embed/" + link)
+    arrayOfIframes.map((link, i) => link.src = embedlink[i])
+});
