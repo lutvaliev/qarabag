@@ -270,3 +270,10 @@ $(document).ready(function () {
     var embedlink = arr.map((link) => "http://www.youtube.com/embed/" + link)
     arrayOfIframes.map((link, i) => link.src = embedlink[i])
 });
+
+$(document).ready(function () {
+    let arrayOfIframes = Array.prototype.slice.call(document.querySelectorAll(".homepage_video"))
+    var arr = arrayOfIframes.map((link) => link.src.split("?v=")[1])
+    var embedlink = arr.map((link) => "http://www.youtube.com/embed/" + link)
+    arrayOfIframes.map((link, i) => link.src = embedlink[i])
+});
