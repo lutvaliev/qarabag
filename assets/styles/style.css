@@ -424,11 +424,20 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     grid-gap: 24px;
 }
 
+.information .information_items .information_item:hover .information-title{
+    background-color: #112350;
+}
+
+.information .information_items .information_item:hover .information-title h4{
+    color: white;
+}
+
 .information .information_items .information_item .information-title {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 16px 16px 40px 16px;
     box-shadow: 0px 4px 40px 0px #8E909929;
+    transition: .2s ease-in-out;
 }
 
 .information .information_items .information_item .information-img {
