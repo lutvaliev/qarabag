@@ -364,8 +364,13 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     color: #081131;
     font-size: 16px;
     font-weight: 600;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     transition: .2s ease-in-out;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
 }
 
 .news .news_section .news_items .news_item .news_info .news_info-text {
@@ -377,7 +382,7 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     transition: .2s ease-in-out;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     display: -webkit-box;
     text-overflow: ellipsis;
 }
@@ -494,6 +499,7 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
 
 .links .links_section {
     grid-gap: 76px;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 }
 
 .links .links_section .link {
@@ -675,11 +681,26 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
     text-overflow: ellipsis;
 }
 
+.events .events_section .event .event_info .event_description{
+    padding-top: 12px;
+    text-align: center;
+    color: #081131;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+}
+
 .events .events_section .event .event_info .event_stats {
-    padding-top: 76px;
+    padding-top: 38px;
     font-size: 16px;
     font-weight: 400;
     color: #081131A3;
+}
+
+.events .events_section .event .event_info .event_stats .event_views svg{
+    margin-right: 8px;
 }
 
 .events_slider{
@@ -814,13 +835,13 @@ nav.menu .menu_list .menu_list-item.active-page .menu_list-item-link {
 }
 
 .activity_img{
-    width: 515px;
     height: 350px;
 }
 
 .activity_img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .active_elem{
@@ -1377,8 +1398,20 @@ footer .footer {
     padding: 40px 0;
 }
 
-footer .footer .footer_logo {
+footer .footer .footer_logo__description{
     width: 30%;
+    display: block;
+}
+
+footer .footer .footer_logo__description .footer_logo{
+    display: block;
+    height: 170px;
+}
+
+footer .footer .footer_logo__description p{
+    color: white;
+    padding-top: 20px;
+    text-align: center;
 }
 
 footer .footer .footer_logo img {
@@ -1798,5 +1831,9 @@ footer .footer .footer_addresses {
     }
     .legislation .legislation_text{
         font-size: 14px;
+    }
+    .activity_images{
+        display: flex;
+        flex-direction: column;
     }
 }
